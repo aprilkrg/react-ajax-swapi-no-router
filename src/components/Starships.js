@@ -24,6 +24,10 @@ export default class Starships extends Component {
             <Starship 
                 key={`ship${i}`}
                 name={ship.name}
+                hyperdriveRating={ship.hyperdrive_rating}
+                url={ship.url}
+                cost={ship.cost_in_credits}
+                class={ship.starship_class}
             />
         )})
         return(

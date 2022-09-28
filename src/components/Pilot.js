@@ -4,7 +4,8 @@ export default class Pilot extends Component {
     render() {
         return(
             <>
-                <h2>Pilots:</h2>
+                <h4>Pilot:</h4>
+                <p>{this.props.name}</p>
             </>
         )
     }

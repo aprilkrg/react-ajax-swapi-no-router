@@ -46,7 +46,7 @@ export default class Starship extends Component {
 				<h2>{this.props.name}</h2>
 				<h3>Class: {this.props.class}</h3>
 				<p>Hyperdrive Rating: {this.props.hyperdriveRating}</p>
-				<p>Cost: ${this.props.cost}</p>
+				<p>Cost: {this.props.cost === "unknown" ? "???????" : `$${this.props.cost}`}</p>
 				<a href={this.props.url}>more details...</a>
                 { this.props.pilots.length ? <h4>Piloted by:</h4> : null }
                 {pilotsInState}

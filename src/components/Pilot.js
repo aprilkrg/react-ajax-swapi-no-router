@@ -5,7 +5,7 @@ export default class Pilot extends Component {
         return(
             <>
                 <h4>Pilot:</h4>
-                <p>{this.props.name}</p>
+                <p><a href={this.props.url}>{this.props.name}</a></p>
             </>
         )
     }

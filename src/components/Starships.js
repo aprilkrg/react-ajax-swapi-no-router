@@ -28,6 +28,7 @@ export default class Starships extends Component {
                 url={ship.url}
                 cost={ship.cost_in_credits}
                 class={ship.starship_class}
+                pilots={ship.pilots}
             />
         )})
         return(

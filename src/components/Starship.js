@@ -8,7 +8,6 @@ export default class Starship extends Component {
 	}
 	componentDidMount = async () => {
 		try {
-			// console.log("LIST:", this.props.pilots)
 			const urls = this.props.pilots.map((url) => axios.get(url))
 			const promisedData = await Promise.all(urls)
 			// console.log("DATA WHICH WAS PROMISED", promisedData)
@@ -30,9 +29,7 @@ export default class Starship extends Component {
 		}
 	}
 	render() {
-		// console.log("PROPS:", this.props)
         const pilotsInState = this.state.pilots.map((pilot, i) => {
-            // console.log("PIRATE", pilot)
             return(
                 <Pilot 
                     name={pilot.name}
@@ -40,7 +37,6 @@ export default class Starship extends Component {
                 />
             )
         })
-        // console.log("pirates in space", pilotsInState)
 		return (
 			<>
 				<h2>{this.props.name}</h2>

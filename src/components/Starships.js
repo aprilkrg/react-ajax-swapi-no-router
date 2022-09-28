@@ -9,7 +9,6 @@ export default class Starships extends Component {
 
     componentDidMount = async () => {
         try {
-            // console.log("THIS:", this)
             const response = await axios.get('https://swapi.dev/api/starships/')
 			console.log("SHIPS:", response.data.results)
             this.setState({
